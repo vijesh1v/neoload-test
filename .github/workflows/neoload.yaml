@@ -1,0 +1,27 @@
+name: Neoload Test Execution
+on:
+  workflow_dispatch: # Allows manual trigger
+jobs:
+  run-neoload-test:
+    runs-on: neoload-runner-2 # Matches your dxpvr-perfTest runner
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Debug - List Files
+        run: |
+          echo "Checking if petstore.nlp exists in the workspace..."
+          dir  # This will list files to confirm petstore.nlp is in the root
+
+      # Optional: Commented out login if you want to test without a token
+      # - name: Login to NeoLoad
+      #   env:
+      #     NL_TOKEN: ${{ secrets.NEOLOAD_TOKEN }}
+      #   run: |
+      #     neoload login --token $NL_TOKEN
+
+      - name: Execute NeoLoad Scenario
+        run: |
+          # Use the confirmed project file and scenario
+          neoload run --project "petstore.nlp" --scenario "scenario1"
