@@ -23,5 +23,5 @@ jobs:
 
       - name: Execute NeoLoad Scenario
         run: |
-          # Use the confirmed project file and scenario
-          neoload run --project "testsd.nlp" --scenario "scenario1"
+          # Use the full path (usually Program Files) and the & symbol for PowerShell
+          & "C:\Program Files\NeoLoad\bin\neoload.exe" run --project "testsd.nlp" --scenario "scenario1"
