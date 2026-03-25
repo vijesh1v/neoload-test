@@ -3,7 +3,7 @@ on:
   workflow_dispatch: # Allows manual trigger
 jobs:
   run-neoload-test:
-    runs-on: neoload-runner-2 # Matches your dxpvr-perfTest runner
+    runs-on: neoload # Matches your dxpvr-perfTest runner
 
     steps:
       - name: Checkout Code
@@ -24,4 +24,4 @@ jobs:
       - name: Execute NeoLoad Scenario
         run: |
           # Use the confirmed project file and scenario
-          neoload run --project "petstore.nlp" --scenario "scenario1"
+          neoload run --project "testsd.nlp" --scenario "scenario1"
