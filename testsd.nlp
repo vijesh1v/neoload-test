@@ -1,0 +1,14 @@
+# Project description file
+
+project.name=testsd
+project.version=8.7
+project.original.version=8.7
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.version=9.1.5
+product.original.version=9.1.5
+project.is-open-test-settings-after-upload=false
+project.id=925d32ed-153e-4b3e-bef9-57f2fe9916fd
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=false

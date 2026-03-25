@@ -1,0 +1,16 @@
+GET https://gigya-prod.sgproof.com/accounts.webSdkBootstrap?apiKey=4_1gPWTEHL8kNPNQkaxuT9yQ&pageURL=https%3A%2F%2Fshop.sgproof.com%2Fauth%2Flogin&sdk=js_latest&sdkBuild=18305&format=json HTTP/2.0
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+sec-ch-ua: "Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+sec-ch-ua-mobile: ?0
+accept: */*
+origin: https://shop.sgproof.com
+sec-fetch-site: same-site
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: https://shop.sgproof.com/
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-GB,en;q=0.9,en-US;q=0.8
+cookie: gmid=gmid.ver4.AtLtSKEOpA._509gR0Yg-FBd1qPl32SMTUbKZBLP2EBmMHFc-1wW7ur9gd9pWNx3-Kog4L7-DnK.dg5pyfJQfLYYBWadcoxEOPLFdx22oOZWRwB8KBE-J2L3Gejp6P5BnmBbwNPO7nc41p2ky28EsFzyJlo-wHl7OQ.sc3; ucid=AjN9GxqxPOmyrW2EAV5eag; hasGmid=ver4; gig_bootstrap_4_SiNBUhcccrkOdzRMpq5piA=gigya-prod_ver4; SiteId=30; dtCookie=v_4_srv_15_sn_31F998F9B4C87D76B4A21FFA96136737_perc_100000_ol_0_mul_1_app-3A318b5ed7d2b88a4d_1; origin_test_auth-login-1=523; apiDomain_3_FVJ1nsx1KfFPVBhK66ImYdru1h5y5f8pp8mj40IuEjDZjYoP2lc1U_ARmIEmkd2A=gigya-prod.sgproof.com; gig3pctest=true
+priority: u=1, i
+

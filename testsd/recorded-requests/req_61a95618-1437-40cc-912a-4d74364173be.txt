@@ -1,0 +1,14 @@
+GET https://gigya-prod.sgproof.com/sdk.config.get?apiKey=4_SiNBUhcccrkOdzRMpq5piA&httpStatusCodes=true&ver=1767373560000 HTTP/2.0
+sec-ch-ua-platform: "Windows"
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+sec-ch-ua: "Microsoft Edge";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+sec-ch-ua-mobile: ?0
+accept: */*
+sec-fetch-site: same-origin
+sec-fetch-mode: cors
+sec-fetch-dest: empty
+referer: https://gigya-prod.sgproof.com/js/Api.htm?apiKey=4_SiNBUhcccrkOdzRMpq5piA&version=latest&build=18305&flavor=base&serviceName=apiService
+accept-encoding: gzip, deflate, br, zstd
+accept-language: en-GB,en;q=0.9,en-US;q=0.8
+priority: u=1, i
+

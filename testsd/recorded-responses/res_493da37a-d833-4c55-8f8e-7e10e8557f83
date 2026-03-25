@@ -1,0 +1,10 @@
+
+               {
+            "errors": [
+            {
+            "errorCode:" 400,
+            "message":"Missing AuthorizationGigya or AuthorizationHybris or AuthorizationASMCustomer",
+            }
+                   ]
+            }
+            

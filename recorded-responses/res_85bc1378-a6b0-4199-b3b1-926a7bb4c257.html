@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- OneTrust Cookies Consent Notice start for http://shop.sgproof.com -->
+<script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrux_10319250807130352.js" data-dtconfig="app=318b5ed7d2b88a4d|cuc=zmz7jj1f|owasp=1|mel=100000|featureHash=ICA7NVfghqrux|dpvc=1|md=mdcc1=bsgws-user.userID,mdcc2=cQuantumMetricSessionID,mdcc3=cloginID|lastModification=1766593948578|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICA7NVfghqrux_10319250807130352.js|reportUrl=/rb_ccv2-cust-ce67qkbx0p-southerng1-p2|rid=RID_23662524|rpid=1056736536|domain=sgproof.com"></script><script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+	            type="text/javascript"
+	            charset="UTF-8"
+	            data-domain-script="019a6f09-103f-7ff0-a0ab-26c344a20b2e">
+	    </script>
+    <script type="text/javascript">
+            function OptanonWrapper() { }
+        </script>
+<!-- OneTrust Cookies Consent Notice end for http://shop.sgproof.com -->
+<!-- Anti flicker script starts here -->
+<!--  <style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-T7V8DW6':true});</script> -->
+<!-- Anti flicker script ends here -->
+
+<script>
+    //prehiding snippet for Adobe Target with asynchronous Launch deployment
+    (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");
+    e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);
+    setTimeout(function(){var a=b.getElementsByTagName("head")[0];
+    if(a){var c=b.getElementById("at-body-style");
+    c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+</script>
+<script>
+    var dataLayer = dataLayer || [];
+
+function gtmInit()
+{   
+    
+    dataLayer.push({
+        'sgws-app': {
+            'siteArea': "",
+            'page': "sgwsErrorPage",
+            'timeEst': "11:10"
+        },
+        'sgws-site': {
+            'siteId': "30",
+            'siteName': "NV",
+            'state': "NV",
+           	'warehouse' : "711"          
+        }
+    });
+    
+
+}
+document.addEventListener('DOMContentLoaded', gtmInit(), false); 
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T7V8DW6');</script>
+<!-- End Google Tag Manager --><!-- Adobe Launch tag start -->
+<script src="https://assets.adobedtm.com/66559808bcc3/047f7589bcf2/launch-4405602882e7.min.js" async></script>
+<!-- Adobe Launch tag end -->
+
+<script>
+  window.__BRYJ_ANALYTICS_EVENT_TYPES__ = {
+    mobileBottomNavClick: 'mobileBottomNavClick',
+    mobileMainNavClick: 'mobileMainNavClick',
+    mobileListNavClick: 'mobileListNavClick',
+    mobileBarCodeScan: 'mobileBarCodeScan',
+  }
+
+  window.__bryjAnalyticsHelperFunction__ = function (
+    eventType,
+    element,
+    action,
+    searchValue,
+  ) {
+    const dataObj = {
+      event: eventType,
+    }
+    if (
+      eventType === __BRYJ_ANALYTICS_EVENT_TYPES__.mobileBottomNavClick ||
+      eventType === __BRYJ_ANALYTICS_EVENT_TYPES__.mobileMainNavClick
+    ) {
+      dataObj.linkName = element
+    }
+    if (eventType === __BRYJ_ANALYTICS_EVENT_TYPES__.mobileBarCodeScan) {
+      dataObj.action = action
+      if (searchValue) {
+        dataObj.searchValue = searchValue
+      }
+    }
+    if (eventType === __BRYJ_ANALYTICS_EVENT_TYPES__.mobileListNavClick) {
+      dataObj.listName = element
+    }
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push(dataObj)
+  }
+</script><script defer src="https://builder-sdks.bryj.ai/websdk/0.7.0/BuildWebSDK.min.js"></script>
+	<title>
+		Proof by Southern Glazer's</title>
+    <!--Mobile-Wrapper Login Script  -->
+    <script>
+	var loggedInStatus = null;
+	var loggedInStatusGlobal;
+    function setLoggedInStatus() {
+        if (typeof gigya === 'undefined' || !gigya.isReady) {
+            setTimeout(setLoggedInStatus, 200);
+        } else {
+			var url = window.location.href;
+			var isErr = (url.indexOf('errorCode=er100') > 0) || (url.indexOf('errorCode=er101')> 0);
+			if(url.indexOf('errorCode=er100') > 0) {
+				loggedInStatusGlobal = `Login Failure: We're sorry but your User ID is invalid, please contact <a href="{0}" class='notification-banner-link'> customer support. </a>`;
+				try {
+					console.log('we are going to invoke the mobile wrapper js error code 100');
+					window.bridgeWebSDK.setCurrentLoginState(window.bridgeWebSDK.loginStates.loginError);
+				} catch(error) {
+					console.log('error code 100 during log in and mobile wrapper script durng exception');
+					console.error(error);
+				}
+				
+			}
+			if(url.indexOf('errorCode=er101') > 0) {
+				loggedInStatusGlobal = `Login Failure: We're sorry but it looks like Proof may be missing an address for your account, please contact <a href="{0}" class='notification-banner-link'> customer support. </a>`;
+				try {
+					console.log('we are going to invoke the mobile wrapper js error code 101');
+					window.bridgeWebSDK.setCurrentLoginState(window.bridgeWebSDK.loginStates.loginError);
+				} catch(error) {
+					console.log('error code 101 during log in and mobile wrapper script durng exception');
+					console.error(error);
+				}
+			}
+            gigya.hasSession().then(function(sessionExist) {
+                if (sessionExist && !isErr) {
+                    loggedInStatus = true;
+                } else {
+                    loggedInStatus = false;
+                }
+            });
+			setTimeout(setLoggedInStatus, 60000);
+        }
+    }
+    setLoggedInStatus();
+    </script>
+    <!-- END Mobile-Wrapper Login Script  -->
+
+	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<meta name="referrer" content="origin">
+
+	<meta name="keywords">
+<meta name="description">
+<meta name="robots" content="noindex,follow">
+<link rel="shortcut icon" href="/_ui/responsive/theme-lambda/images/favicon.ico" type="image/x-icon"/>
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i" />
+<link rel="stylesheet" type="text/css" media="all" href="/v/2211.43-2211azuresdk12-20251103-090432-20251215.5-2ed4faa-Perf_Pipeline-uat-9/wro/addons_responsive.css?version=2211.43-2211azuresdk12-20251103-090432-20251215.5-2ed4faa-Perf_Pipeline-uat-9" />
+		<script type="text/javascript">(function() {var walkme = document.createElement('script'); walkme.type = 'text/javascript'; walkme.async = true; walkme.src = 'https://cdn.walkme.com/users/5f757a3688d54e1d92063ab8391024da/walkme_5f757a3688d54e1d92063ab8391024da_https.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(walkme, s); window._walkmeConfig = {smartLoad:true}; })();</script>
+	<link rel="stylesheet" type="text/css" href="//c.zmags.com/static/styles.css" />
+
+<script defer type="text/javascript"  src="//c.zmags.com/static/manifest.js"></script>
+<script defer type="text/javascript"  src="//c.zmags.com/static/vendor.js"></script>
+<script defer type="text/javascript"  src="//c.zmags.com/static/client.js"></script></head>
+
+<body data-onload-modal-id="" data-next-modal-id="" class="page-sgwsErrorPage pageType-ContentPage template-pages-layout-sgwsOneColumnLayout pageLabel-sgwsErrorPage smartedit-page-uid-sgwsErrorPage smartedit-page-uuid-eyJpdGVtSWQiOiJzZ3dzRXJyb3JQYWdlIiwiY2F0YWxvZ0lkIjoic2d3c0NvbnRlbnRDYXRhbG9nIiwiY2F0YWxvZ1ZlcnNpb24iOiJPbmxpbmUifQ== smartedit-catalog-version-uuid-sgwsContentCatalog/Online  language-en">
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7V8DW6" title="GTM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) --><a href="#main" id="top-skip-to" class="skip-navigation-link">Skip to Main Content</a>
+		<header class="header-bar" role="banner">
+  <div class="site-configs"
+    data-apigee-base-url=""
+    data-cart-id=""
+    data-mp-cart-id=""
+    data-pickup-cart-id=""
+    data-user-id=""
+    data-user-role="ANONYMOUS"
+    data-marketplace-toggle="false"
+    data-minicart-mfe-toggle="false"
+    data-buyer-credit-toggle=""
+    data-cart-url=""
+    data-shop-all-products=""
+    data-mp-cart-param=""
+    data-shop-all-SGWS-filter=""
+    data-shop-all-MP-filter=""
+    data-common-filter=""
+    data-shop-all-without-relevance=""
+    data-mp-customerId=""
+    data-mp-recentOrderUrl=""
+    data-pickup-toggle=""
+    data-bopis-state-on=""
+    data-multi-location-pickup-toggle=""
+    data-csrf-token="c7f15a67-c92a-48c6-8cba-2c7f5aff53a9"
+    data-apigee-update-entries-url=""
+    data-apigee-faq-components-url=""
+    data-terms-condition-url=""
+    data-prepareCartUrl=""
+    data-balanceSDKScriptSrc=""
+    data-placeOrderUrl=""
+    data-brandDiscoveryURL=""
+    data-sellerDiscoveryURL=""
+    data-dws-warehouse-name=""
+    data-cart-has-products=""
+    data-shipToPublicKey=""
+    data-bopis-warehouse-cutoff-time=""
+    data-site-id="30"
+    data-AdvancedSearchSPVEnabler="true"
+    data-show-atc-deals-modal="true"
+    data-has-preferred-warehouse-id=""
+    data-pickup-warehouse-id=""
+    data-sgws-internal="false"
+    data-kevel-dynamic-content-toggle="true"
+    data-advanceDealToggle="false"
+    data-maxcaseslimit=""
+    data-maxpromolimit=""
+  >
+  </div>
+  <div class="header-mfe-container">
+        
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="header-initHeader"></div>
+
+<div class="product-card" style="display: none !important;"></div>
+<div class="qty" style="display: none !important;"></div>
+<script src="https://cdn.split.io/sdk/split-browser-1.3.1.full.min.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+		(async function (d) {
+		const initModule = (
+			microFrontendName,
+			moduleName,
+			moduleArguments,
+			moduleExport = "default"
+		) => {
+			if (window[microFrontendName]) {
+				window[microFrontendName]
+					.get('./' + moduleName)
+					.then((factory) => {
+						const initApp = factory()[moduleExport];
+						initApp(moduleArguments);
+					})
+					.catch((err) =>
+						console.error(
+							'Error initializing module ' + moduleName + ': ',
+							err
+						)
+					);
+			} else {
+				console.error(microFrontendName + ' has not been loaded');
+			}
+		};
+
+		const getZephyrEnvironment = () => {
+			const hostname = window.location.hostname;
+			switch (hostname) {
+				case 'dev2.sgproof.com':
+				case 'asm-dev2.sgproof.com':
+					return 'dev2';
+				case 'demo.sgproof.com':
+				case 'asm-demo.sgproof.com':
+					return 'demo';
+				case 'stage.sgproof.com':
+				case 'asm-stg.sgproof.com':
+					return 'stage';
+				case 'rgr.sgproof.com':
+				case 'asm-rgr.sgproof.com':
+					return 'rgr';
+				case 'perf.sgproof.com':
+				case 'asm-perf.sgproof.com':
+					return 'perf';
+				case 'shop.sgproof.com':
+				case 'asm.sgproof.com':
+					return 'shop';
+				default:
+					return 'demo';
+			}
+		}
+
+		const loadScript = (src) => {
+			const script = d.createElement("script");
+			script.type = "text/javascript";
+			script.async = true;
+			script.onerror = () => console.error('Failed to load script: ' + src);
+			script.src = src;
+			script.onload = () => {
+				const onDocumentReady = () => {
+					initModule("header", "initHeader", {
+						rootElement: d.getElementById("header-initHeader")
+					});
+				};
+				
+				if (d.readyState !== "loading") {
+					onDocumentReady();
+				} else {
+					d.addEventListener("DOMContentLoaded", onDocumentReady);
+				}
+			};
+			d.head.appendChild(script);
+		};
+
+		const headerUrl = "https://sgws-" + getZephyrEnvironment() + "-env-header-dgc-dev-proof-ecomm-web-sgwshub.ze.southernglazers.com/remoteEntry.js"
+
+		loadScript(headerUrl);
+	})(document);
+</script>
+
+</div>
+      
+
+
+
+
+
+<div class="header-navmenu-content"
+        
+        data-saml-enabled="true"
+        data-trigger-sfdc-logout="false"
+        data-sfdc-slo=""
+        data-trigger-saml-logout="false"
+        data-saml-slo=""
+        data-gigya-logout-on-error="">
+      </div>
+    </header>
+
+<div class="loading-overlay">
+  <div class="loading-spinner" aria-hidden="true">
+    <div class="loading-spinner-stream" aria-hidden="true"></div>
+  </div>
+  <div class="loading-spinner-text">Cart Loading...</div>
+</div>
+
+<a href="#top-skip-to" id="main" class="skip-navigation-link return-navigation-link">Return to Navigation</a>
+      <section class="page">
+        <main class="page-main g-container" id="main">
+
+	<section class="page-section page-section-nopad page-section-nospace">
+		</section>
+	
+	<section class="page-section">
+	<div class="error-page-content">
+    <p class="error-page-icon-box">
+    <span class="error-page-icon" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 21 18">
+	<path fill="currentColor" d="M10.5,0L0,18h21L10.5,0z M11,14h-1v-1h1V14z M10,12V7h1v5H10z"></path>
+</svg>
+
+    </span>
+    </p>
+    <p class="error-page-title"> Everything happens for a Riesling!</p>
+
+    <p class="error-page-msg">
+        Or a reason. Please try another page while we sort things out. In the meantime,let us know if you continue to encounter this issue.</p>
+
+    <div class="error-page-button-container">
+        <a href="/sgws/en/usd/search?q=:relevance:primaryCategory:WINE" class="button button-secondary button-md-full">Shop Wine</a>
+        <a href="/sgws/en/usd/search?q=:relevance:primaryCategory:SPIRITS" class="button button-secondary button-md-full">Shop Spirits</a>
+		<a href="/sgws/en/usd/search?q=:relevance:primaryCategory:BEER+%26+OTHER" class="button button-secondary button-md-full">Shop Beer & Other</a>
+        <a href="/sgws/en/usd/allProducts" class="button button-secondary button-md-full">Shop All Products</a>
+    </div>
+    <a href="/content/sitemap" class="error-page-site-map-link"> site map </a>
+</div></section>
+	</main>
+<!-- Start Component: Footer -->
+      <footer class="footer" role="contentinfo" aria-label="Footer">
+        <div class="sticky-wrapper" style="position: relative !important;">
+              <!-- ACCOUNT NOTICE BANNER -->
+              </div>
+        
+
+
+
+
+
+
+
+    
+
+
+
+
+
+<div id="footer-initFooter"></div>
+
+
+
+
+
+
+
+
+
+<script>
+	(function (d) {
+		const initModule = (
+			microFrontendName,
+			moduleName,
+			moduleArguments,
+			moduleExport = "default"
+		) => {
+			if (window[microFrontendName]) {
+				window[microFrontendName]
+					.get('./' + moduleName)
+					.then((factory) => {
+						const initApp = factory()[moduleExport];
+						initApp(moduleArguments);
+					})
+					.catch((err) =>
+						console.error(
+							'Error initializing module ' + moduleName + ': ',
+							err
+						)
+					);
+			} else {
+				console.error(microFrontendName + ' has not been loaded');
+			}
+		};
+
+		const getZephyrEnvironment = () => {
+			const hostname = window.location.hostname;
+			switch (hostname) {
+				case 'dev2.sgproof.com':
+				case 'asm-dev2.sgproof.com':
+					return 'dev2';
+				case 'demo.sgproof.com':
+				case 'asm-demo.sgproof.com':
+					return 'demo';
+				case 'stage.sgproof.com':
+				case 'asm-stg.sgproof.com':
+					return 'stage';
+				case 'rgr.sgproof.com':
+				case 'asm-rgr.sgproof.com':
+					return 'rgr';
+				case 'perf.sgproof.com':
+				case 'asm-perf.sgproof.com':
+					return 'perf';
+				case 'shop.sgproof.com':
+				case 'asm.sgproof.com':
+					return 'shop';
+				default:
+					return 'demo';
+			}
+		}
+
+		const loadScript = (src) => {
+			const script = d.createElement("script");
+			script.type = "text/javascript";
+			script.async = true;
+			script.onerror = () => console.error('Failed to load script: ' + src);
+			script.src = src;
+			script.onload = () => {
+				const onDocumentReady = () => {
+					initModule("footer", "initFooter", {
+						rootElement: d.getElementById("footer-initFooter")
+					});
+				};
+				
+				if (d.readyState !== "loading") {
+					onDocumentReady();
+				} else {
+					d.addEventListener("DOMContentLoaded", onDocumentReady);
+				}
+			};
+			d.head.appendChild(script);
+		};
+
+		loadScript("https://sgws-" + getZephyrEnvironment() + "-env-footer-dgc-dev-proof-ecomm-web-sgwshub.ze.southernglazers.com/remoteEntry.js");
+	})(document);
+</script>
+
+</footer>
+      <style type="text/css">
+        footer.footer {
+          background-color: inherit !important;
+          padding: 0 !important;
+          color: inherit !important;
+          position: inherit !important;
+        }
+      </style>
+    <script src="https://kit.fontawesome.com/fe83b39d01.js" defer crossorigin="anonymous"></script>
+</section>
+	<script type="text/javascript">
+		/*<![CDATA[*/
+		
+		var ACC = { config: {} };
+			ACC.config.contextPath = '';
+			ACC.config.encodedContextPath = '\/sgws\/en\/usd';
+			ACC.config.commonResourcePath = '\/_ui\/responsive\/common';
+			ACC.config.themeResourcePath = '\/_ui\/responsive\/theme-lambda';
+			ACC.config.siteResourcePath = '\/_ui\/responsive\/site-sgws';
+			ACC.config.rootPath = '\/_ui\/responsive';
+			ACC.config.CSRFToken = 'c7f15a67-c92a-48c6-8cba-2c7f5aff53a9';
+			ACC.pwdStrengthVeryWeak = 'Very weak';
+			ACC.pwdStrengthWeak = 'Weak';
+			ACC.pwdStrengthMedium = 'Medium';
+			ACC.pwdStrengthStrong = 'Strong';
+			ACC.pwdStrengthVeryStrong = 'Very strong';
+			ACC.pwdStrengthUnsafePwd = 'password.strength.unsafepwd';
+			ACC.pwdStrengthTooShortPwd = 'Too short';
+			ACC.pwdStrengthMinCharText = 'Minimum length is %d characters';
+			ACC.accessibilityLoading = 'Loading... Please wait...';
+			ACC.accessibilityStoresLoaded = 'Stores loaded';
+			ACC.config.googleApiKey='';
+			ACC.config.googleApiVersion='3.7';
+
+			
+			ACC.autocompleteUrl = '\/sgws\/en\/usd\/search\/autocompleteSecure';
+
+			
+			ACC.config.loginUrl = '\/sgws\/en\/usd\/login';
+
+			
+			ACC.config.authenticationStatusUrl = '\/sgws\/en\/usd\/authentication\/status';
+
+			
+				ACC['gigyaUserMode'] = 'raas';
+				
+		/*]]>*/
+	</script>
+	<script type="text/javascript">
+	/*<![CDATA[*/
+	ACC.addons = {};	//JS namespace for addons properties
+
+	
+		ACC.addons['stocknotificationaddon'] = [];
+		
+		ACC.addons['gigyab2bloginaddon'] = [];
+		
+		ACC.addons['sgwsgigyalogin'] = [];
+		
+		ACC.addons['sgwsasmaddon'] = [];
+		
+				ACC.addons['sgwsasmaddon']['asm.timer.min'] = 'min';
+			
+		ACC.addons['sgwsuiaddon'] = [];
+		
+		ACC.addons['smarteditaddon'] = [];
+		
+		ACC.addons['customerinterestsaddon'] = [];
+		
+		ACC.addons['sgwssamladdon'] = [];
+		
+		ACC.addons['b2bacceleratoraddon'] = [];
+		
+		ACC.addons['sgwsacceleratoraddon'] = [];
+		
+		ACC.addons['sgwsadvancedsearch'] = [];
+		
+		ACC.addons['sgwscommerceorgaddon'] = [];
+		
+	/*]]>*/
+</script>
+<script type="text/javascript" src="/_ui/shared/js/generatedVariables.js"></script>
+	<script type="text/javascript" src="/v/2211.43-2211azuresdk12-20251103-090432-20251215.5-2ed4faa-Perf_Pipeline-uat-9/wro/all_responsive.js?version=2211.43-2211azuresdk12-20251103-090432-20251215.5-2ed4faa-Perf_Pipeline-uat-9"></script>
+		<script type="text/javascript" src="/v/2211.43-2211azuresdk12-20251103-090432-20251215.5-2ed4faa-Perf_Pipeline-uat-9/wro/addons_responsive.js?version=2211.43-2211azuresdk12-20251103-090432-20251215.5-2ed4faa-Perf_Pipeline-uat-9"></script>
+		<script type="text/javascript" src="/_ui/addons/sgwsuiaddon/responsive/common/js/main.bundle.js?version=2211.43-2211azuresdk12-20251103-090432-20251215.5-2ed4faa-Perf_Pipeline-uat-9"></script>
+		<script type="text/javascript" src="https://cdns.us1.gigya.com/JS/gigya.js?apikey=3_W5ZDsexRNNJgs8Gk0mGLISmYrNneaoFuBOckL9jQAJ1nM2FP5QvxKwldJ2HcBQB2&lang=en"></script>
+			
+
+
+
+
+<div class="modal-temp-content" aria-hidden="true" data-modal-content-id="deals-modal">
+    <p class="sr-only" role="alert">You are on the product deals modal</p>
+    <div class="deals-header">
+        <h2 class="modal-title deals-title">
+            Product Deals
+        </h2>
+        <div class="deals-intro">
+            <p>Any additional discounts for which you qualify will be automatically applied to your final invoice.</p>
+        </div>
+    </div>
+    <div class="tabs deals-tabs">
+        <div class="deals-tabs-header">
+            <div class="tab-select">
+                <div class="form-select">
+                    <select class="form-select-input tab-select-trigger" aria-label="Select a tab">
+                        
+                            
+                            
+
+                            
+                        
+                        
+                          <option value="deals-mix" disabled>Mix &amp; Match</option>
+                          <option value="deals-combo" disabled>Combo</option>
+                        
+                    </select>
+                    <span class="form-select-icon" aria-hidden="true">
+                        <svg aria-hidden="true" data-prefix="far" data-icon="angle-down" class="svg-inline--fa fa-angle-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"></path></svg>
+                    </span>
+                </div>
+            </div>
+            <div class="tab-triggers" role="tablist">
+                
+                    
+                    
+
+                    
+                
+               
+                <button type="button" role="tab" disabled aria-controls="Combo" class="tab-trigger tab-trigger-deals tab-combo" data-tab-id="deals-combo" data-action="dealsTab">
+                    Combo
+                </button>
+                <button type="button" role="tab" disabled aria-controls="Mix &amp; Match" class="tab-trigger tab-trigger-deals tab-mixnmatch" data-tab-id="deals-mix" data-action="dealsTab">
+                    Mix &amp; Match
+                </button>
+                
+            </div>
+        </div>
+        <div class="tab-items">
+            
+                
+                
+
+                
+            
+            
+            <div class="tab deals-tab" data-tab-id="deals-mix" data-action="dealsTab" data-content="/sgws/en/usd/deals/mixAndMatch/template" data-deal-name="mix and match">
+                <div class="loading-spinner" aria-hidden="true">
+                    <div class="loading-spinner-stream" aria-hidden="true"></div>
+                </div>
+            </div>
+            <div class="tab deals-tab" data-tab-id="deals-combo" data-action="dealsTab" data-content="/sgws/en/usd/deals/combos" data-deal-name="combo">
+                <div class="loading-spinner" aria-hidden="true">
+                    <div class="loading-spinner-stream" aria-hidden="true"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
